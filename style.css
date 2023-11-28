@@ -1,0 +1,101 @@
+body {
+    background-color: lightblue;
+}
+
+.hidden {
+    display: none;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+#spinner {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+#spinner img {
+    max-width: 100px;
+    min-width: 100px;
+    margin: 0 auto;
+}
+
+#fidgetSpinner {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#pentagram {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+#pentagram img {
+    max-width: 100px;
+    min-width: 100px;
+    margin: 0 auto;
+}
+
+#spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: spin 5s linear infinite;
+} 
+
+#pentagram  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: pentagramspin 5s linear infinite;
+}
+
+@keyframes pentagramspin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#pentagram img {
+    max-width: 100px;
+    min-width: 100px;
+    animation: fadeInOut 3s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
